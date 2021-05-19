@@ -10,10 +10,71 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    body {background-color: rgb(11, 6, 26); font-family: Arial, Helvetica, sans-serif;}
-    .main {display: flex; justify-content: center; align-items: center; margin: 150px; background-color: rgb(20, 9, 54); }
-    .left { display: flex; flex-direction: column;  color: white; padding-left: 5%; padding-right: 10%; min-height: 100% !important; }
-    .highlight {color: rgb(176, 91, 199)}
+    body {
+      background-color: rgb(11, 6, 26);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .category {
+      color: rgb(166, 166, 166);
+      font-size: small;
+      text-transform: uppercase;
+    }
+    .count {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      font-size: x-large;
+      font-weight: 800;
+    }
+    .description {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      line-height: 1.6;
+      color: rgb(166, 166, 166)
+    }
+    .main {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 150px;
+      background-color: rgb(25, 9, 59);
+      border-radius: 10px;
+      border-color: transparent;
+    }
+    .highlight {
+      color: rgb(176, 91, 199)
+    }
+    .left {
+      display: flex;
+      flex-direction: column;
+      color: white;
+      padding-left: 5%;
+      padding-right: 10%;
+      min-height: 100% !important; }
+    .right {
+      position: flex;
+      float: right;
+      height: 450px;
+      width: 1435px;
+    }
+    .stats {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      padding-right: 10px;
+    }
+    .tinted-image {
+      float: right;
+      height:100%;
+      width: 100%;
+      background:
+        linear-gradient(
+          rgba(155, 0, 230,0.40),
+          rgba(155, 0, 230,0.40)),
+         url(../stats-preview-card-component-main/images/image-header-desktop.jpg) no-repeat right;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
@@ -33,13 +94,22 @@
       </div>
 
       <div class="stats">
-        10k+ companies
-        314 templates
-        12m+ queries
+        <div class="companies">
+          <div class="count">10k+</div>
+          <div class="category">companies</div>
+        </div>
+        <div class="templates">
+          <div class="count">314</div>
+          <div class="category">templates</div>
+        </div>
+        <div class="queries">
+          <div class="count">12m+</div>
+          <div class="category">queries</div>
+        </div>
       </div>
     </div>
-    <div class="rig">
-      <img src="../stats-preview-card-component-main/images/image-header-desktop.jpg" alt="">
+    <div class="right">
+      <div class="tinted-image"></div>
     </div>
   </div>
 
