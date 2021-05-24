@@ -12,20 +12,23 @@
   <style>
     body {
       position: relative;
-      padding-top: 35%;
+      padding-top: 25%;
     }
     .person-card {
       display: flex;
+      position: absolute;
       flex-direction: column;
       justify-content: center;
       width: 20%;
       background-color: white;
       margin: auto;
+      border-radius: 10px;
     }
     .main {
       display: flex;
       justify-content: center;
       align-items: center;
+      position: relative;
       width: 90%;
       height: 600px;
       background-color: hsl(185, 75%, 39%);
@@ -33,11 +36,23 @@
     }
     .top {
       position: absolute;
+      top: -62px;
+      left: 62px;
       width: 40%;
-      height: 50%;
+      height: 95%;
       background-image: url(./images/bg-pattern-top.svg);
       background-repeat: no-repeat;
       transform: rotate(90deg) scaleX(-1);
+    }
+    .bottom {
+      position: absolute;
+      bottom: 0px;
+      right: 0px;
+      width: 60%;
+      height: 50%;
+      background-image: url(./images/bg-pattern-bottom.svg);
+      background-repeat: no-repeat;
+      /* transform: rotate(90deg) scaleX(-1); */
     }
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
