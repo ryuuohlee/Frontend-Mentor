@@ -25,8 +25,9 @@
       border-radius: 50%;
     }
     .person-card {
+      z-index: 10;
+      position: fixed;
       display: flex;
-      position: absolute;
       flex-direction: column;
       justify-content: center;
       width: 25%;
@@ -46,20 +47,23 @@
       justify-content: center;
       align-items: center;
       position: relative;
-      width: 90%;
+      width: 80%;
       height: 600px;
       background-color: hsl(185, 75%, 39%);
-      margin: auto;
+      margin-left: 10%;
+      margin-right: 10%;
+      margin-bottom: 5px;
     }
     .top {
-      position: absolute;
-      top: -62px;
-      left: 62px;
-      width: 40%;
-      height: 95%;
+      position: fixed;
+      left: 4rem;
+      top: 4rem;
+      width: 20%;
+      height: 90%;
+      margin-left: 8rem;
       background-image: url(./images/bg-pattern-top.svg);
       background-repeat: no-repeat;
-      transform: rotate(90deg) scaleX(-1);
+      transform: rotate(270deg) scaleY(-1);
     }
     .bottom {
       position: absolute;
@@ -69,7 +73,7 @@
       height: 50%;
       background-image: url(./images/bg-pattern-bottom.svg);
       background-repeat: no-repeat;
-      /* transform: rotate(90deg) scaleX(-1); */
+      transform: scaleX(1);
     }
     .user-image {
       z-index: 1;
@@ -97,56 +101,58 @@
   </style>
 </head>
 <body>
-  <div class="main">
-    <div class="top">
+  <main>
+    <div class="main">
+      <div class="top">
+      </div>
+      <div class="bottom">
+      </div>
     </div>
-    <div class="bottom">
-    </div>
-        <div class="person-card">
-          <div class="card-background">
+    <div class="person-card">
+      <div class="card-background">
+      </div>
+      <div class="middle">
+        <div class="user-image">
+          <img src="./images/image-victor.jpg" alt="" />
+        </div>
+        <div class="user-stats">
+          <div class="name-age">
+            Victor Crest
+            26
           </div>
-          <div class="middle">
-            <div class="user-image">
-              <img src="./images/image-victor.jpg" alt="" />
-            </div>
-            <div class="user-stats">
-              <div class="name-age">
-                Victor Crest
-                26
-              </div>
-              <div class="location">
-                London
-              </div>
-            </div>
-          </div>
-          <div class="user-bottom-stats">
-            <div class="stat-cards">
-              <div class="counts">
-                80K
-              </div>
-              <div class="categories">
-                Followers
-              </div>
-            </div>
-            <div class="stat-cards">
-              <div class="counts">
-                803K
-              </div>
-              <div class="categories">
-                Likes
-              </div>
-            </div>
-            <div class="stat-cards">
-              <div class="counts">
-                1.4K
-              </div>
-              <div class="categories">
-                Photos
-              </div>
-            </div>
+          <div class="location">
+            London
           </div>
         </div>
-  </div>
+      </div>
+      <div class="user-bottom-stats">
+        <div class="stat-cards">
+          <div class="counts">
+            80K
+          </div>
+          <div class="categories">
+            Followers
+          </div>
+        </div>
+        <div class="stat-cards">
+          <div class="counts">
+            803K
+          </div>
+          <div class="categories">
+            Likes
+          </div>
+        </div>
+        <div class="stat-cards">
+          <div class="counts">
+            1.4K
+          </div>
+          <div class="categories">
+            Photos
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Jeffrey Lee</a>.
