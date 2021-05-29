@@ -135,6 +135,32 @@
       font-size: small;
       margin-top: 10px;
     }
+
+    @media screen and (max-width: 500px) {
+      body {
+        padding-top: 100px;
+        font-family: 'Kumbh Sans', sans-serif;
+        font-size: 18px;
+        max-width: 1440px;
+      }
+
+
+
+      .top {
+        position: fixed;
+        float: right;
+        right: 0px;
+        top: 0px;
+        width: 300px;
+        height: 250px;
+        margin-top: 125px;
+        margin-right: 30%;
+        background-image: url(./images/bg-pattern-top.svg);
+        background-repeat: no-repeat;
+        transform: rotate(90deg) scaleX(-1);
+      }
+
+    }
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
