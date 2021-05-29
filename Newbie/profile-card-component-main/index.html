@@ -15,7 +15,10 @@
       @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
 
     body {
-      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: auto;
       padding-top: 200px;
       font-family: 'Kumbh Sans', sans-serif;
       font-size: 18px;
@@ -51,7 +54,7 @@
       justify-content: center;
       align-items: center;
       position: relative;
-      width: 90%;
+      width: 95%;
       height: 600px;
       background-color: hsl(185, 75%, 39%);
       margin: auto;
@@ -60,12 +63,13 @@
 
     .top {
       position: fixed;
-      left: 0px;
+      float: right;
+      right: 0px;
       top: 0px;
-      width: 420px;
+      width: 400px;
       height: 600px;
-      margin-top: 120px;
-      margin-left: 13%;
+      margin-top: 100px;
+      margin-right: 56%;
       background-image: url(./images/bg-pattern-top.svg);
       background-repeat: no-repeat;
       transform: rotate(90deg) scaleX(-1);
@@ -88,6 +92,7 @@
       justify-content: center;
       margin-top: -50px;
     }
+
     .user-stats {
       display: flex;
       flex-direction: column;
@@ -95,6 +100,22 @@
       margin-top: 20px;
       margin-bottom: 30px;
     }
+
+    .user-name {
+      font-weight: 700;
+      margin-right: 5px;
+    }
+
+    .user-age {
+      color: hsl(0, 0%, 59%);
+    }
+
+    .location {
+      color: hsl(0, 0%, 59%);
+      font-size: small;
+      margin-top: 10px;
+    }
+
     .user-bottom-stats {
       display: flex;
       justify-content: space-evenly;
@@ -102,6 +123,17 @@
       text-align: center;
       margin-top: 20px;
       margin-bottom: 20px;
+    }
+
+    .counts {
+      font-weight: 700;
+      font-size: large;
+    }
+
+    .categories {
+      color: hsl(0, 0%, 59%);
+      font-size: small;
+      margin-top: 10px;
     }
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
@@ -122,8 +154,8 @@
             </div>
             <div class="user-stats">
               <div class="name-age">
-                Victor Crest
-                26
+                <span class="user-name">Victor Crest</span>
+                <span class="user-age">  26</span>
               </div>
               <div class="location">
                 London
