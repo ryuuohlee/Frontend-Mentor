@@ -1,13 +1,12 @@
-import React from 'react'
-import logo from './logo.svg';
-import GlobalStyle from './globalStyles'
-import Card from './components/Advice Card/AdviceCard';
+import React from "react";
+import GlobalStyle from "./globalStyles";
+import AdviceCard from "./components/Advice Card/AdviceCard";
 
 function App() {
   return (
-    <div className="App">
+    <div className="body">
       <GlobalStyle />
-      <Card />
+      <AdviceCard />
     </div>
   );
 }
