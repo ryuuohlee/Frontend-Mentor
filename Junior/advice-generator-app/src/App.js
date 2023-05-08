@@ -1,14 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import GlobalStyle from "./globalStyles";
 import AdviceCard from "./components/Advice Card/AdviceCard";
 
-function App() {
+const App = () => {
+  const [quote, setQuote] = useState("");
   return (
     <div className="body">
       <GlobalStyle />
-      <AdviceCard />
+      <AdviceCard quote={quote} />
     </div>
   );
-}
+};
 
 export default App;

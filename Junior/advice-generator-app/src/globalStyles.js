@@ -4,7 +4,8 @@ const GlobalStyle = createGlobalStyle`
   .body {
     background: hsl(218, 23%, 16%);
     display: flex;
-    height: 100vw;
+    font-family: 'Manrope', sans-serif;
+    height: 100vh;
     justify-content: center;
     position: relative;
     width: 100%;
